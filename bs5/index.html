@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 crash course</title>
+
+    <style>
+        [class*="col"]{
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+
+        }
+        /*[class*="con"]{
+            padding: 1rem;
+            background-color: purple;
+            border: 2px solid #fff;
+            color: #fff;
+            text-align: center;
+
+        }*/
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container-md">
+    <div class="row">
+    <div class="col-sm">1</div>
+    <div class="col-sm">2</div>
+    <div class="col-sm">3</div>
+    </div>
+    
+
+    
+    <div class="row">
+        <div class="col-sm">1</div>
+        <div class="col-sm">2</div>
+    </div> 
+    </div>
+
+    <div class="container">
+    <div class="row">
+    <div class="col-md-8">Main Content</div> 
+    <div class="col-md-4">Sidebar</div>
+    </div>
+    </div>
+    <div class="container">
+    <h2>Gutter</h2>
+    </div>
+
+    <div class="container px-4">
+    <div class="row gx-5">
+        <div class="col">
+            <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col">
+            <div class="p-3 border">Custom column padding</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row gy-2">
+            <div class="col-6">1</div>
+            <div class="col-6">2</div>
+            <div class="col-6">3</div>
+            <div class="col-6">4</div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Buttons</h2>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-Danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-Info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+        <hr>
+        <h1>Cards</h1>
+        <p>Card size controlled by style</p>
+        <div class="card" style="width: 18rem;">
+            <div class="card body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit autem quidem adipisci magni, totam maiores velit ipsum qui corporis explicabo?
+        </div>
+        </div>
+
+        <p>Card size controlled by Bootstrap grid:</p>
+        
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur eveniet cupiditate voluptatibus similique sit in nobis, ex ea illum?
+
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <div class="card my-3" style="width: 18rem">
+    <img class ="card-img-top" src="http://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg">
+    <div class="card-body">
+        <h5 class="card -tittle">Card Tittle</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sapiente, tempore eaque, ducimus natus ratione nesciunt modi tenetur est nostrum perferendis odit laborum ex! Nesciunt placeat obcaecati vitae reprehenderit itaque?</p>
+    </div>
+
+    </div>
+    <div class="card-mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1649361890054-f635139f0d7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80">
+
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h6 class="card-tittle">Card tittle</h6>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas excepturi cum quis eos illum labore.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last update 3 min ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card my-3" style="width: 18rem">
+    <div class="card-header"><b>
+        featured</b>
+    </div>
+
+        
+        <div class="card-body">
+            <h5 class="card -tittle">Special Tittle treatment</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, sapiente, tempore eaque, ducimus natus ratione nesciunt modi tenetur est nostrum perferendis odit laborum ex! Nesciunt placeat obcaecati vitae reprehenderit itaque?</p>
+            <a href="#" class="btn btn-primary">Go Somewhere</a>
+        </div>
+    
+        </div>
+
+</div>
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
